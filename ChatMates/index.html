@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- BOOTSTRAP -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <title>ChatMates</title>
+      <!-- css links -->
+      <script src="Js/client.js"></script>
+      <link rel="stylesheet" href="indexcss.css">
+</head>
+
+
+<!-- realtime chat application -->
+<!-- websocket is two way connection between server and the client-->
+<!-- Long polling is used in real-time web applications to achieve near-instantaneous communication between the client and the web server. It is particularly useful in chat and messaging applications where real-time updates are crucial. -->
+<!-- toh basically client server ko kuch data k liye mangta hai aur obviously client doesnt want them to get waited for too long toh ham ese systems ya ese servers ka aur client ka connection karwaye jisse connection server se data pull ya fetching karna kam samay me ho toh ham isse long polling kehte hai -->
+<!-- ese long polling k liye we use Websockets isko "Socket io" bhi kehte hai jo client aur server k beech me connection banaye rakhe-->
+<!-- agar ham databse use karke karenge toh time consuming kyuki client ek request dega fir database search marega ya update,delete ya jo bhi work hai vo karega fir  usko read and then write me bhot time lag jayega-->
+<!-- http me client ko request maangni padtiy ki update hai kya hai kya and all and http agar nhi rehga update toh batata nhi dhang se toh client ki request toh waste chali jayengi isiliye websocket ek two connection kartay client aur server ka update kuch rehga toh turant vo boltay ha bata dunga kuch rehga toh  -->
+<!-- 1. do websites banayenge client aur node server website taaki we will have two way convo and then -->
+
+
+<body>
+      <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                  <div>
+                        <img type="button" class="chatmates-logo" src="ImagesRequired/chatmates image.jpg">
+                        <a class="navbar-brand" href="index.html">ChatMates</a>
+                  </div>
+                  <div> 
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul style="display: flex;flex-direction: row;justify-content: space-around;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="group_info.html">Group Information</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link active" href="participants.html">Participants</a>
+                              </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Search for any previous message" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                  </div>
+            </div>
+      </nav>
+
+      <div class="container">
+            <div class="message right">
+                  You : HII
+            </div>
+            <div class="message left">
+                  Future Husband : HI, CUTIE PIE!
+            </div>
+            <div class="message right">
+                  You : WHAT'S UP HANDSOME?
+            </div>
+            <div class="message right">
+                  You : WASSUP
+            </div>
+            <div class="message left">
+                  ed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti
+            </div>
+      </div>
+      <div class="send">
+            <form action="" id="send-container">
+                  <input type="text" name="messageInput" id="messageInput">
+                  <button style="background: transparent;border: transparent;"><img class="send-message-button" src="/ChatMates/ImagesRequired/send message.png"></button>
+            </form>
+      </div>
+</body>
+
+</html>
