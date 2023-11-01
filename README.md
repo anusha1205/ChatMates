@@ -1,1 +1,1 @@
-# CodeClauseInternship_ChatMaze
+# CodeClauseInternship_ChatMates
