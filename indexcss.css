@@ -1,34 +1,99 @@
-body{
-      background: url("/ChatMates/ImagesRequired/doodleBackground_image.jpg");
+body {
+      background: url("ImagesRequired/doodleBackground_image.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      /* background-position: fixed; */
       /* background-size: cal(100%); */
       height: 100%;
 }
-.chatmates-logo{
-      width: 15%;
-}
-.container-fluid{
+
+.heading-div{
       display: flex;
+      background-color: rgb(167, 167, 167);
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0.5%;
+      /* gap: 10%; */
+      
+}
+
+.brand-div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10%;
+}
+
+
+.chatmates-logo{
+      width: 31%;
+      align-items: center;
+}
+.chatmates-brand-name{
+      font-size: 4rem;
+      color: rgb(14, 10, 69);
+      text-decoration: none;
+}
+.chatmates-brand-name:hover{
+      color: rgb(68, 68, 68);
+}
+.icons-div{
+      display: flex;
+      justify-content: flex-end;
+      gap: 5%;
+      width: fit-content;
       align-items: center;
 }
 
 
-
-
-
-
-.container{
-      max-width: 80%;
-      background-color: rgb(190, 190, 190);
-      color: white;
-      margin: auto;
-      /* display: flex;
-      flex-direction: column; */
-      /* align-content: center; */
-      height: 70vh;
+.information-icon{
+      width: 5%;
 }
-.message{
+.video-icon{
+      width: 7%;
+}
+.phone-icon{
+      width: 5.6%;
+}
+.information-icon:hover,.phone-icon,.video-icon{
+      cursor: pointer;
+}
+
+
+
+
+.container {
+      max-width: 90%;
+      /* background-color: rgb(190, 190, 190); */
+      color: white;
+     
+      padding: 33px;
+      height: 70vh;
+      /* so that we we wpuld be able to scroll in y direction of the chat */
+      overflow-y: auto;
+      margin-bottom: 23px;
+}
+::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    /* Track */
+::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgb(34, 34, 34); 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+::-webkit-scrollbar-thumb {
+      background: rgb(167, 167, 167); 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+      background: #6b6b6b; 
+    }
+.message {
       background-color: rgb(158, 158, 158);
       border: ridge rgb(123, 123, 123);
       border-radius: 6px;
@@ -36,36 +101,56 @@ body{
       padding: 1%;
       width: fit-content;
 }
-.left{
+
+.left {
       float: left;
       clear: both;
       margin-right: 20%;
 }
 
-.right{
+.right {
       float: right;
       /* not allowing left and right */
       clear: both;
       margin-left: 20%;
 }
 
-
-
-
-/* sending things */
-/* .send{
-      display: flex;
-      justify-content: space-around;
+.middle {
+      margin-left: 0%;
+      margin-right: 0%;
 }
- */
 
-#send-container{
+
+#messageInp {
+      width: 85%;
+      align-items: flex-start;
+      border: beige;
+      height: 40px;
+      padding: 15px;
+      border-radius: 50px;
+      background-color: rgb(61, 61, 61);
+}
+
+#send-box {
+      /* display: flex; */
+      margin-top: 2%;
+      background-color: rgb(167, 167, 167);
+      margin-left: 3%;
+      margin-right: 3%;
+
+}
+
+#send-container {
       display: block;
       margin: auto;
-      text-align: center;
+      text-align: left;
+      max-width: 900px;
+      /* height: 100%; */
+      padding: 2%;
 }
+
 /* message box to send */
-.send-message-button{
+.send-message-button {
       /* position: fixed; */
-      width: 20px;
+      width: 2.6rem;
 }
