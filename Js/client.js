@@ -20,6 +20,10 @@ const append = (message,position)=>{
       if(position=='left' || position=='middle'){
             Audio.play();
       }
+      // var AudioNotification=new Audio('ringtone/iphone messenger ringtone.mp3');
+      // if('user-joined'==name){
+      //       AudioNotification.play();
+      // }
 };
 
 form.addEventListener('submit', (e)=>{
@@ -47,7 +51,6 @@ socket.on('user-joined',name=>{
 socket.on('receive',data=>{
       append(`${data.name}: ${data.message}` , 'left');
 });
-
 
 //on leave 
 //MIDDLE KARDO
