@@ -1,1 +1,1 @@
-ChatMates
+CodeClauseInternship_ChatMates
