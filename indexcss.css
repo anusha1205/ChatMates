@@ -70,7 +70,7 @@ body {
       color: white;
       margin-top: 2%;
       padding: 33px;
-      height: 60vh;
+      height: 70vh;
       /* so that we we wpuld be able to scroll in y direction of the chat */
       overflow-y: auto;
       margin-bottom: 23px;
@@ -103,7 +103,7 @@ body {
       border-radius: 6px;
       border-width: 0.5%;
       margin-top: 1%;
-      font-size: 1rem;
+      font-size: 1.5rem;
       padding: 1.4%;
       width: fit-content;
 }
@@ -153,7 +153,7 @@ body {
       display: flex;
       margin: auto;
       text-align: center;
-      max-width: 900px;
+      max-width: 90%;
       /* height: 100%; */
       padding: 4%;
 }
