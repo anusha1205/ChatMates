@@ -13,9 +13,7 @@ body {
       background-color: rgb(27, 27, 27);
       justify-content: space-around;
       align-items: center;
-      padding: 0.5%;
-      /* gap: 10%; */
-      
+      padding: 0.5%;      
 }
 
 .brand-div{
@@ -25,18 +23,18 @@ body {
       gap: 10%;
 }
 
-
 .chatmates-logo{
       width: 50%;
       align-items: center;
 }
 .chatmates-brand-name{
+      font-family: 'Raleway', sans-serif;
       font-size: 8rem;
-      color: rgb(221, 219, 255);
+      color: rgb(255, 240, 240);     
       text-decoration: none;
 }
 .chatmates-brand-name:hover{
-      color: rgb(68, 68, 68);
+      color: rgb(132, 132, 132);
 }
 .icons-div{
       display: flex;
@@ -70,41 +68,36 @@ body {
       color: white;
       margin-top: 2%;
       padding: 33px;
-      height: 65vh;
+      height: 60vh;
       /* so that we we wpuld be able to scroll in y direction of the chat */
       overflow-y: auto;
       margin-bottom: 23px;
 }
+
 ::-webkit-scrollbar {
-      width: 8px;
-    }
-    
-    /* Track */
+      width: 35px;
+}
 ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px rgb(34, 34, 34); 
-      border-radius: 10px;
-    }
-     
-    /* Handle */
+      box-shadow: inset 100px 100px  #000000; 
+      border-radius: 50px;
+}
 ::-webkit-scrollbar-thumb {
-      background: rgb(167, 167, 167); 
-      border-radius: 10px;
-    }
-    
-    /* Handle on hover */
+      background: rgb(190, 190, 190); 
+      border-radius: 50px;
+}    
 ::-webkit-scrollbar-thumb:hover {
-      background: #6b6b6b; 
+      background: #929292; 
     }
 .message {
       color: rgb(255, 255, 255);
       font-family: 'Playpen Sans', cursive;
       background-color: rgb(26, 26, 26);
       border: solid rgb(7, 6, 6);
-      border-radius: 6px;
+      border-radius: 50px;
       border-width: 0.5%;
       margin-top: 1%;
-      font-size: 4rem;
-      padding: 1.4%;
+      font-size: 5rem;
+      padding: 1%;
       width: fit-content;
 }
 
@@ -112,7 +105,7 @@ body {
       float: left;
       clear: both;
       margin-right: 10%;
-      margin-top: 2%;
+      margin-top: 1.5%;
 }
 
 .right {
