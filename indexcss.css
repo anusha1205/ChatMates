@@ -27,11 +27,11 @@ body {
 
 
 .chatmates-logo{
-      width: 25%;
+      width: 50%;
       align-items: center;
 }
 .chatmates-brand-name{
-      font-size: 2.8rem;
+      font-size: 8rem;
       color: rgb(221, 219, 255);
       text-decoration: none;
 }
@@ -48,14 +48,14 @@ body {
 
 
 .information-icon{
-      width: 10%;
+      width: 7%;
       border-radius: 100%;
 }
 .video-icon{
-      width: 14%;
+      width: 11%;
 }
 .phone-icon{
-      width: 12%;
+      width: 8%;
 }
 .information-icon:hover,.phone-icon,.video-icon{
       cursor: pointer;
@@ -70,7 +70,7 @@ body {
       color: white;
       margin-top: 2%;
       padding: 33px;
-      height: 70vh;
+      height: 65vh;
       /* so that we we wpuld be able to scroll in y direction of the chat */
       overflow-y: auto;
       margin-bottom: 23px;
@@ -103,7 +103,7 @@ body {
       border-radius: 6px;
       border-width: 0.5%;
       margin-top: 1%;
-      font-size: 1.5rem;
+      font-size: 4rem;
       padding: 1.4%;
       width: fit-content;
 }
@@ -130,14 +130,16 @@ body {
 
 
 #messageInp {
-      color: rgb(45, 45, 45);
-      font-size: 1.3rem;
-      align-items: flex-start;
-      border: rgb(255, 255, 255);
-      height: 35px;
+      color: rgb(0, 0, 0);
+      font-size: 4rem;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      border: rgb(0, 0, 0);
+      height: 150px;
       width: 100%;
-      padding: 10px;
-      border-radius: 50px;
+      padding: 2rem;
+      border-radius: 70px;
       background-color: rgb(156, 156, 156);
 }
 
@@ -145,7 +147,6 @@ body {
       /* display: flex; */
       margin-top: 2%;
       background-color: rgb(26, 26, 26);
-      
 
 }
 
@@ -153,15 +154,15 @@ body {
       display: flex;
       margin: auto;
       text-align: center;
-      max-width: 90%;
+      max-width: 70%;
       /* height: 100%; */
-      padding: 4%;
+      padding: 2%;
 }
 
 /* message box to send */
 .send-message-button {
       /* position: fixed; */
-      width: 2.2rem;
+      width: 100%;
 }
 
 .footer-div{
