@@ -48,14 +48,14 @@ body {
 
 
 .information-icon{
-      width: 5%;
+      width: 10%;
       border-radius: 100%;
 }
 .video-icon{
-      width: 7%;
+      width: 14%;
 }
 .phone-icon{
-      width: 5.6%;
+      width: 12%;
 }
 .information-icon:hover,.phone-icon,.video-icon{
       cursor: pointer;
@@ -104,7 +104,7 @@ body {
       border-width: 0.5%;
       margin-top: 1%;
       font-size: 1rem;
-      padding: 1%;
+      padding: 1.4%;
       width: fit-content;
 }
 
@@ -112,6 +112,7 @@ body {
       float: left;
       clear: both;
       margin-right: 10%;
+      margin-top: 2%;
 }
 
 .right {
@@ -119,6 +120,7 @@ body {
       /* not allowing left and right */
       clear: both;
       margin-left: 10%;
+      margin-top: 2%;
 }
 
 .middle {
@@ -160,4 +162,11 @@ body {
 .send-message-button {
       /* position: fixed; */
       width: 2.2rem;
+}
+
+.footer-div{
+      height: 100px;
+      width: 100%;
+      margin-top: 0%;
+      background-color: rgb(26, 26, 26);;
 }
