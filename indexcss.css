@@ -24,12 +24,12 @@ body {
 }
 
 .chatmates-logo{
-      width: 50%;
+      width: 30%;
       align-items: center;
 }
 .chatmates-brand-name{
       font-family: 'Raleway', sans-serif;
-      font-size: 8rem;
+      font-size: 6rem;
       color: rgb(255, 240, 240);     
       text-decoration: none;
 }
@@ -37,23 +37,24 @@ body {
       color: rgb(132, 132, 132);
 }
 .icons-div{
+      margin-left: 5%;
       display: flex;
       justify-content: flex-end;
-      gap: 5%;
-      width: fit-content;
+      gap: 10%;
+      max-width: 500px;
       align-items: center;
 }
 
 
 .information-icon{
-      width: 7%;
+      width: 10%;
       border-radius: 100%;
 }
 .video-icon{
       width: 11%;
 }
 .phone-icon{
-      width: 8%;
+      width: 12%;
 }
 .information-icon:hover,.phone-icon,.video-icon{
       cursor: pointer;
@@ -93,10 +94,10 @@ body {
       font-family: 'Playpen Sans', cursive;
       background-color: rgb(26, 26, 26);
       border: solid rgb(7, 6, 6);
-      border-radius: 50px;
+      border-radius: 10px;
       border-width: 0.5%;
       margin-top: 1%;
-      font-size: 5rem;
+      font-size: 3rem;
       padding: 1%;
       width: fit-content;
 }
@@ -110,7 +111,7 @@ body {
 
 .right {
       float: right;
-      /* not allowing left and right */
+      /* not allowing anything in left and right */
       clear: both;
       margin-left: 10%;
       margin-top: 2%;
@@ -129,7 +130,7 @@ body {
       justify-content: center;
       gap: 5%;
       border: rgb(0, 0, 0);
-      height: 150px;
+      height: 110px;
       width: 100%;
       padding: 2rem;
       border-radius: 70px;
@@ -148,8 +149,7 @@ body {
       margin: auto;
       text-align: center;
       max-width: 70%;
-      /* height: 100%; */
-      padding: 2%;
+      padding: 3%;
 }
 
 /* message box to send */
@@ -162,5 +162,80 @@ body {
       height: 100px;
       width: 100%;
       margin-top: 0%;
-      background-color: rgb(26, 26, 26);;
+      background-color: rgb(26, 26, 26);
+}
+
+
+
+@media screen and (max-width: 1300px) and (min-width: 650px) {
+      .chatmates-brand-name{
+            font-family: 'Raleway', sans-serif;
+            font-size: 3rem;
+            color: rgb(255, 240, 240);     
+            text-decoration: none;
+      }
+      .chatmates-logo{
+            width: 30%;
+            align-items: center;
+      }
+      .icons-div{
+            justify-content: flex-end;
+            gap: 10%;
+            max-width: 250px;
+      }
+      .message{
+            font-size: 2.3rem;
+            padding: 2%;
+      }
+      .messageInp{
+            height: 90px;
+            font-size: 3rem;
+      }
+
+
+
+      .information-icon{
+            width: 12%;
+      }
+      .phone-icon{
+            width: 13%;
+      }
+      .video-icon{
+            width: 13%;
+      }
+}
+
+@media screen and (max-width: 650px) and (min-width: 0px) {
+      .chatmates-brand-name{
+            font-family: 'Raleway', sans-serif;
+            font-size: 3rem;
+            color: rgb(255, 240, 240);     
+            text-decoration: none;
+      }
+      .icons-div{
+            gap: 4%;
+            max-width: 120px;
+      }
+      .information-icon{
+            width: 30%;
+      }
+      .phone-icon{
+            width: 33%;
+      }
+      .video-icon{
+            width: 31%;
+      }
+      .message{
+            font-size: 1.5rem;
+      }
+      .messageInp{
+            height: 10px;
+            font-size: 2rem;
+            
+      }
+      .heading-div{
+            display: flex;
+            justify-content: center;
+      }
+      
 }
