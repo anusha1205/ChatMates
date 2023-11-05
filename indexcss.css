@@ -91,7 +91,7 @@ body {
     }
 .message {
       color: rgb(255, 255, 255);
-      font-family: 'Playpen Sans', cursive;
+      font-family: 'Montserrat', sans-serif;
       background-color: rgb(26, 26, 26);
       border: solid rgb(7, 6, 6);
       border-radius: 10px;
@@ -164,18 +164,21 @@ body {
       margin-top: 0%;
       background-color: rgb(26, 26, 26);
 }
-
+.heading{
+      font-size: 5rem;
+      font-family: 'Poppins', sans-serif;
+}
 
 
 @media screen and (max-width: 1300px) and (min-width: 650px) {
       .chatmates-brand-name{
             font-family: 'Raleway', sans-serif;
-            font-size: 3rem;
+            font-size: 4rem;
             color: rgb(255, 240, 240);     
             text-decoration: none;
       }
       .chatmates-logo{
-            width: 30%;
+            width: 27%;
             align-items: center;
       }
       .icons-div{
@@ -192,16 +195,18 @@ body {
             font-size: 3rem;
       }
 
-
+      .heading{
+            font-size: 2rem;
+      }
 
       .information-icon{
-            width: 12%;
+            width: 16%;
       }
       .phone-icon{
-            width: 13%;
+            width: 16%;
       }
       .video-icon{
-            width: 13%;
+            width: 18%;
       }
 }
 
