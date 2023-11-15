@@ -1,4 +1,4 @@
-#CodeClauseInternship_ChatMates
+# CodeClauseInternship_ChatMates
 
 The Technologies in Action
 HTML, CSS, JavaScript :
